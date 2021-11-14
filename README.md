@@ -56,7 +56,7 @@
 - [X] Create a data investigation narrative or question that will drive your project.
 - [X] Tell a story through time-series charts for your narrative.
 - [X] Tell a story through spatial maps for your narrative.
-- [ ] Include a visualization that displays space and time in your narrative.
+- [X] Include a visualization that displays space and time in your narrative.
 
 
 ### Project 4
@@ -65,7 +65,7 @@
 
 ## Individual Projects
 
-### Project 1: Who Is THE James Bond
+### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 'Project 1: Who Is THE James Bond'
 
 There have been 25 James Bond movies over the last 58 years (excluding releases in 2021) generating over $17B in inflation adjusted profit.  Over these 25 movies there have been six actors portraying James Bond, and the question that often comes up "Who Is James Bond". This analysis is being done for the movie loving fans to help answer that question.
 
@@ -85,9 +85,70 @@ At the end of 2020 the actor who is the best James Bond seems clear, Sean Conner
 
 It should be noted Craig has a fifth James Bond movie appearing in 2021 and he could still take the role of James Bond more in the future.  
 
-### Project 2:  Hackathon, Gas Stations Pre/Post Covid
+### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 'Project 2:  Hackathon, Gas Stations Pre/Post Covid'
 
+As a team we wanted to look at the profile of gas station customers in Georgia pre and post covid (assumption July 2019 & July 2021 are pre and post covid months).  The hypothesis is that remote work popularity would impact what type of customers are buying gas now versus those purchasing gas before covid struck the state of Georgia.
 
+#### My Contributions
 
-### Project 3
+For this project I was responsible for creating the code and datasets used to create subsequent graphs.  The hackathon.r graph contains the coding for the project.  
+
+#### My Story
+
+The first two graphs are the weighted average income for 2019 and 2021 by county for Georgia gas station customers. The static graph is difficult to see if there are changes over the two years. Viewing an interactive map will help look at some of the details.
+
+![](documents/2019_wam_income_county.png)   ![](documents/2021_wam_income_county.png)
+
+[2019 Interactive Map](documents/ga_p3_income19.html)
+[2021 Interactive Map](documents/ga_p3_income21.html)
+
+The next two graphs are the weighted average age for 2019 and 2021 by county for Georgia gas station customers. Like the income graph this graph is difficult to see if there are changes over the two years. Viewing the previous interactive map will help look at some of the details.
+
+![](documents/2019_wam_age_county.png)   ![](documents/2021_wam_age_county.png)
+
+The final two graphs show the diffence in weighted average income and age between 2019 and 2021 gas station customers.  Around metro Atlanta we see drops in most suburban counties.  The one oddity is one county, Stewart, in western Georgia that saw an increase in weighted average of income in excess of $11k.  
+
+![](documents/diff_income_county.png)   ![](documents/diff_age_county.png)
+
+[2021 - 2019 Difference Interactive Map](documents/ga_p3_diff_income.html)
+
+### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project 3: Rent vs Own in Georgia
+
+There has been an ongoing debate whether one should buy or rent their homes.  Data from [Kaggle's](https://www.kaggle.com/goldenoakresearch/us-acs-mortgage-equity-loans-rent-statistics?select=real_estate_db.csv) website on census mortgage, rent, and debt statistics was downloaded for the US to compare mortgages and rents in the state of Georgia. Both the mortgages and rents include all ancillary home costs, such as utilities, taxes, insurances, etc...
+
+## Mortgages
+
+In the first glance most of the high mortgage areas center around metro Atlanta, and further up I-85 as seen in the first graph below. Additionally, as one gets further into Atlanta suburbs one can see mortgage sprawl is following with the working populations. Communities well outside the metro area still have monthly mortgage expenses over $1,000.  
+
+![](documents/ga_p3_mean_mortgage_map.png)
+
+The next graph is looking at the top and bottom five average mortgages in Georgia. The top five average mortgages by county in Georgia all exceed $1750 while the bottom five all fall under $1000.
+
+![](documents/ga_p3_mean_mort.png)
+
+## Rents
+
+In the first glance most of the high rents areas center around metro Atlanta. This is expected as mountains exist to the north with a smaller population, and farmlands to the south and east of Fulton County. 
+
+![](documents/ga_p3_mean_rent_map.png)
+
+The next graph is looking at the top and bottom five average rents in Georgia. The top five average rents by county in Georgia all exceed $1250 while the bottom five all fall under $500.
+
+![](documents/ga_p3_mean_rent.png)
+
+## Deltas
+
+The next graph is looking at the top and bottom five deltas between average mortgages and rents by county in Georgia. The top five deltas by county in Georgia all exceed $750 while the bottom five all fall under $250.
+
+Given that the delta between rents and mortgages are all above $250 it seems a given that renting is the best financial option.  Additional research will be needed to ascertain if variables other than location are impacting these deltas.  For example what are the sizes of the homes?  Are renters taking smaller homes whereas home owners with mortgages are in larger estates?  In some counties section 8 housing is no legal, such as Cobb County, which will impact the deltas between mortgages and rents.
+
+![](documents/ga_p3_mean_mort_minus_rent.png)
+
+## Interactive Maps
+
+Provided below are interactive maps for mortgage and rents in the state of Georgia.
+
+[Mortgages](documents/ga_p3_mean_mort.html)
+
+[Rents](documents/ga_p3_mean_rent.html)
 
