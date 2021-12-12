@@ -61,7 +61,12 @@
 
 ### Project 4
 
+Complete this project in R and Python as two standalone reports.
 
+- [X] Create 2-3 charts that evaluate potential relationships between the home variables and before1980.
+- [X] Can you build a classification model (before or after 1980) that has at least 90% accuracy for the state of Colorado to use (explain your model choice and which models you tried)?
+- [X] Will you justify your classification model by detailing the essential features in your model (a chart and a description are a must)?
+- [X] Can you describe the quality of your classification model using 2-3 evaluation metrics? You need to provide an interpretation of each evaluation metric when you provide the value.
 
 ## Individual Projects
 
